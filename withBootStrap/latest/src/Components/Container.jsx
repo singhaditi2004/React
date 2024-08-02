@@ -1,23 +1,21 @@
+import CurrentTime from "./CurrentTime";
+import Heading from "./Heading";
+import Moto from "./Moto";
+import "../App.css";
 function Container() {
-    return (
-      <div className="card" style={{ width: "18rem" }}>
+  return (
+    <div className="center-container">
+      <div className="card shadow center-container" style={{ width: "18rem" }}>
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <Heading />
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the cards content.
+            <Moto />
           </p>
-          <a href="#" className="card-link">
-            Card link
-          </a>
-          <a href="#" className="card-link">
-            Another link
-          </a>
+          <CurrentTime />
         </div>
       </div>
-    );
-  }
-  
-  export default Container;
-  
+    </div>
+  );
+}
+
+export default Container;
