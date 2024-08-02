@@ -13,6 +13,7 @@ function App() {
         <CurrentTime></CurrentTime>
         <Moto></Moto>
         <Heading></Heading>
+        <CurrentTime></CurrentTime>
       </center>
     </>
   );

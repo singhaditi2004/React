@@ -1,7 +1,7 @@
+const CurrentTime = () => {
+  let time = new Date();
 
-let CurrentTime=()=>{
-    return <></>
-
+  return <>{time.toLocaleTimeString()}</>;
 };
 
 export default CurrentTime;
