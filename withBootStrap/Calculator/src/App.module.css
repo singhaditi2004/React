@@ -1,0 +1,17 @@
+.calculator{
+ border: 3px solid  rgb(34, 129, 153);
+ border-radius: 15px;
+ height: 50vh;
+ width: 20vw;
+}
+
+.display{
+  margin: 20px;
+  width: 15vw;
+  height: 5vh;
+  border: 2px solid rgb(28, 98, 116);
+  border-radius: 10px;
+  font-size: 23px;
+  color:  rgb(78, 127, 139);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}

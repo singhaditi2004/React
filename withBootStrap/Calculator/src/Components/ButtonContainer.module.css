@@ -1,0 +1,11 @@
+.btnCont{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+   
+   .btn{
+       width: 45px;
+       height: 30px;
+       margin: 5px;
+   }
