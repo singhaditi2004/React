@@ -46,9 +46,8 @@
 @media screen and (max-width: 768px) {
   .calculator {
     width: 70vw;
-    height: 65vh;
+    height: 66vh;
   }
-  
   .display {
     width: 60vw;
     font-size: 20px;
