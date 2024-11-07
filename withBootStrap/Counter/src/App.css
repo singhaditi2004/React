@@ -2,3 +2,11 @@
     height: 3rem;
     width: 5em;
 }
+
+.control-row{
+    margin-top: 2rem;
+}
+
+.number-input{
+    max-width: 12rem;
+}
