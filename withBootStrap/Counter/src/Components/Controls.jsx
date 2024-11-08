@@ -29,6 +29,14 @@ const Controls = () => {
     });
     inputEle.current.value = "";
   };
+  const handleReset = () => {
+    dispatch({ type: "RESET" });
+    inputEle.current.value = "";
+  };
+  const handlePrivacy = () => {
+    dispatch({ type: "PRIVACY" });
+    inputEle.current.value = "";
+  };
   return (
     <>
       <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -42,9 +50,15 @@ const Controls = () => {
         <button
           type="button"
           onClick={handleDecrement}
-          className="btn btn-outline-secondary btn-lg px-4"
+          className="btn btn-secondary btn-lg px-4"
         >
           -1
+        </button>
+        <button type="button" className="btn btn-warning btn-lg px-4" onClick={handlePrivacy}>
+          Privacy
+        </button>
+        <button type="button" onClick={handleReset} className="btn btn-success">
+          Reset
         </button>
       </div>
       <div className="d-grid gap-2 d-sm-flex justify-content-sm-center control-row">
