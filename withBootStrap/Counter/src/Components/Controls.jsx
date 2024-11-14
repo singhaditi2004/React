@@ -1,15 +1,16 @@
 import { useDispatch } from "react-redux";
 import "../App.css";
 import { useRef } from "react";
+import { counterActions } from "../store";
 
 const Controls = () => {
-  const dispatch = useDispatch();
+  //  const dispatch = useDispatch();
   const inputEle = useRef();
   const handleIncrement = () => {
-    dispatch({ type: "INCREMENT" });
+    counterActions.increment();
   };
   const handleDecrement = () => {
-    dispatch({ type: "DECEREMENT" });
+    counterActions.decrement();
   };
   const handleAdd = () => {
     dispatch({
@@ -54,7 +55,11 @@ const Controls = () => {
         >
           -1
         </button>
-        <button type="button" className="btn btn-warning btn-lg px-4" onClick={handlePrivacy}>
+        <button
+          type="button"
+          className="btn btn-warning btn-lg px-4"
+          onClick={handlePrivacy}
+        >
           Privacy
         </button>
         <button type="button" onClick={handleReset} className="btn btn-success">
