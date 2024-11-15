@@ -4,39 +4,46 @@ import { useRef } from "react";
 import { counterActions } from "../store";
 
 const Controls = () => {
-  //  const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const inputEle = useRef();
   const handleIncrement = () => {
-    counterActions.increment();
+    dispatch(counterActions.increment());
+    console.log("Incremented");
   };
   const handleDecrement = () => {
-    counterActions.decrement();
+    dispatch(counterActions.decrement());
   };
   const handleAdd = () => {
-    dispatch({
+    /*  dispatch({
       type: "ADD",
       payload: {
         value: inputEle.current.value,
       },
-    });
+    });*/
+    dispatch(counterActions.add({ value: Number(inputEle.current.value) }));
     inputEle.current.value = "";
   };
   const handleSubtract = () => {
-    dispatch({
+    /* dispatch({
       type: "SUBTRACT",
       payload: {
         value: inputEle.current.value,
       },
-    });
+    });*/
+    dispatch(
+      counterActions.subtract({ value: Number(inputEle.current.value) })
+    );
     inputEle.current.value = "";
   };
   const handleReset = () => {
-    dispatch({ type: "RESET" });
-    inputEle.current.value = "";
+    // dispatch({ type: "RESET" });
+    dispatch(counterActions.reset());
+    // inputEle.current.value = "";
   };
   const handlePrivacy = () => {
-    dispatch({ type: "PRIVACY" });
-    inputEle.current.value = "";
+    //dispatch({ type: "PRIVACY" });
+    dispatch(counterActions.privacy());
+    //inputEle.current.value = "";
   };
   return (
     <>
