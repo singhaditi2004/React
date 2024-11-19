@@ -1,7 +1,6 @@
-import "./index.css";
-import logo from "./images/myntra_logo.webp";
-import Bag from "./Components/bag";
-function App() {
+import "../index.css";
+import logo from "../images/myntra_logo.webp";
+const Bag = () => {
   return (
     <>
       <header>
@@ -42,17 +41,20 @@ function App() {
             <span className="action_name">Wishlist</span>
           </div>
 
-          <a className="action_container" href="pages/bag.html">
+          <div className="action_container">
             <span className="material-symbols-outlined action_icon">
               shopping_bag
             </span>
             <span className="action_name">Bag</span>
             <span className="bag-item-count">0</span>
-          </a>
+          </div>
         </div>
       </header>
       <main>
-        <div className="items-container"></div>
+        <div className="bag-page">
+          <div className="bag-items-container"></div>
+          <div className="bag-summary"></div>
+        </div>
       </main>
       <footer>
         <div className="footer_container">
@@ -95,11 +97,10 @@ function App() {
         <hr />
 
         <div className="copyright">
-          © 2024 www.myntra.com. All rights reserved.
+          © 2023 www.myntra.com. All rights reserved.
         </div>
       </footer>
     </>
   );
-}
-
-export default App;
+};
+export default Bag;
