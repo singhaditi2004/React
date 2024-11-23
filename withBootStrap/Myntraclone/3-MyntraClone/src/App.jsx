@@ -3,10 +3,11 @@ import Bag from "./Components/bag";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import HomeItem from "./Components/HomeItem";
+import image1 from "./images/image1.jpg";
 function App() {
   const item = {
     id: "001",
-    image: "../images/1.jpg",
+    image: { image1 },
     company: "Carlton London",
     item_name: "Rhodium-Plated CZ Floral Studs",
     original_price: 1045,
