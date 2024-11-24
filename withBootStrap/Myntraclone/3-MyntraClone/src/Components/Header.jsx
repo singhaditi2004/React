@@ -1,4 +1,9 @@
-import logo from "../images/myntra_logo.webp";
+import logo from "/images/myntra_logo.webp";
+import { BsPerson } from "react-icons/bs";
+import { FaRegHeart } from "react-icons/fa";
+import { IoBagOutline } from "react-icons/io5";
+import { IoSearchSharp } from "react-icons/io5";
+
 const Header = () => {
   return (
     <>
@@ -19,7 +24,7 @@ const Header = () => {
           </a>
         </nav>
         <div className="search_bar">
-          <span className="material-symbols-outlined search_icon">search</span>
+          <IoSearchSharp />
           <input
             className="search_input"
             placeholder="Search for products, brands and more"
@@ -27,23 +32,20 @@ const Header = () => {
         </div>
         <div className="action_bar">
           <div className="action_container">
-            <span className="material-symbols-outlined action_icon">
-              person
-            </span>
+            <BsPerson />
+
             <span className="action_name">Profile</span>
           </div>
 
           <div className="action_container">
-            <span className="material-symbols-outlined action_icon">
-              favorite
-            </span>
+            <FaRegHeart />
+
             <span className="action_name">Wishlist</span>
           </div>
 
           <a className="action_container" href="pages/bag.html">
-            <span className="material-symbols-outlined action_icon">
-              shopping_bag
-            </span>
+            <IoBagOutline />
+
             <span className="action_name">Bag</span>
             <span className="bag-item-count">0</span>
           </a>
