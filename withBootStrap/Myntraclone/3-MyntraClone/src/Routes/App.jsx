@@ -1,8 +1,7 @@
-import "./index.css";
-import Bag from "./Components/bag";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import HomeItem from "./Components/HomeItem";
+import "../index.css";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import HomeItem from "../Components/HomeItem";
 function App() {
   const item = {
     id: "001",
