@@ -3,15 +3,16 @@ import { BsPerson } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { IoSearchSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header>
         <div className="logo_container">
-          <a href="#">
+          <Link to="/">
             <img className="myntra_home" src={logo} alt="Myntra Home" />
-          </a>
+          </Link>
         </div>
         <nav className="nav_bar">
           <a href="#">Men</a>
@@ -43,12 +44,12 @@ const Header = () => {
             <span className="action_name">Wishlist</span>
           </div>
 
-          <a className="action_container" href="pages/bag.html">
+          <Link className="action_container" to="/bag">
             <IoBagOutline />
 
             <span className="action_name">Bag</span>
             <span className="bag-item-count">0</span>
-          </a>
+          </Link>
         </div>
       </header>
     </>
