@@ -3,7 +3,7 @@ const BagSummary = () => {
     totalItem: 3,
     totalMRP: 2345,
     totatDiscount: 999,
-    finalPayment: 1346,
+    finalPayment: 136,
   };
   return (
     <>
@@ -16,7 +16,7 @@ const BagSummary = () => {
           <span className="price-item-value">₹{bagSummary.totalMRP}</span>
         </div>
         <div className="price-item">
-          <span className="price-item-tag">Discount on MRP</span>
+          <span className="price-item-tag">Discount on MRP </span>
           <span className="price-item-value priceDetail-base-discount">
             -₹{bagSummary.totalDiscount}
           </span>
