@@ -4,9 +4,10 @@ const BagSummary = () => {
     totalMRP: 2345,
     totatDiscount: 999,
     finalPayment: 136,
+    image: "/images/1.jpg",
   };
   return (
-    <>
+    <div className="bag-summary">
       <div className="bag-details-container">
         <div className="price-header">
           PRICE DETAILS ({bagSummary.totalItem} Items){" "}
@@ -18,7 +19,7 @@ const BagSummary = () => {
         <div className="price-item">
           <span className="price-item-tag">Discount on MRP </span>
           <span className="price-item-value priceDetail-base-discount">
-            -₹{bagSummary.totalDiscount}
+            -₹{bagSummary.totatDiscount}
           </span>
         </div>
         <div className="price-item">
@@ -34,7 +35,7 @@ const BagSummary = () => {
       <button className="btn-place-order">
         <div className="css-xjhrni">PLACE ORDER</div>
       </button>
-    </>
+    </div>
   );
 };
 export default BagSummary;
