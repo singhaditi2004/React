@@ -1,7 +1,7 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 const itemSlice = createSlice({
   name: "item",
-  initialState: [],
+  initialState: [ ],
   reducers: {
     addInitialItem: (store, action) => {
       return store;
