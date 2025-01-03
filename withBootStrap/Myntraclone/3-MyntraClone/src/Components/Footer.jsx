@@ -42,7 +42,7 @@ const Footer = () => {
         <hr />
 
         <div className="copyright">
-          © 2024 www.myntra.com.. All rights reserved.
+          © 2024 www.myntra.com All rights reserved.
         </div>
       </footer>
     </>
