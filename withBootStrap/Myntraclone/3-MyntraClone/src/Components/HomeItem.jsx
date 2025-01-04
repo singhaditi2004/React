@@ -1,5 +1,8 @@
 //import image from "/images/1.jpg";
 const HomeItem = ({ item }) => {
+  if (!item || !item.image) {
+    return <div>Item data is unavailable</div>;
+  }
   return (
     <>
       <div className="item-container">

@@ -15,6 +15,8 @@ const FetchItems = () => {
     fetch("http://localhost:8080/items", { signal })
       .then((res) => res.json())
       .then((item) => {
+        console.log("Fetched data:", item); // Add this to debug the API response
+
         dispatch(itemActions.addInitialItem(item[0]));
       });
     return () => {
